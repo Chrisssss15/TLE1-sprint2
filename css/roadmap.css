@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+#header{
+    width: 100%;
+}
+
 body {
   --color: rgba(30, 30, 30);
   --bgColor: rgba(245, 245, 245);
@@ -16,7 +20,7 @@ body {
   display: grid;
   align-content: center;
   gap: 2rem;
-  padding: 2rem;
+  /* padding: 2rem; */
   font-family: "Poppins", sans-serif;
   color: var(--color);
   background: var(--bgColor);
