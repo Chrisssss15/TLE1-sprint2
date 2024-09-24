@@ -1,15 +1,21 @@
+* {
+    padding: 0 auto;
+    margin: 0;
+}
+
 /* Nav */
 header{
-    border: red 1px solid;
+    /* border: red 1px solid; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: #a1c8e7;
     /* width: 90%; */
 
 }
 header img{
-    width: 150px;
-    height: 100px;
+    width: 175px;
+    height: 150px;
     /* padding: 5px; */
     padding-top: 1%;
     padding-bottom: 1%;
@@ -19,7 +25,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 1%;
+    padding-top: 2%;
     width: 80%;
     /* margin-left: 3%; */
 }
