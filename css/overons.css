@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header{
+    width: 100%;
+}
+
+h1 {
+    margin-left: 60vh;
+  }
+
+body {
+    --color: rgba(30, 30, 30);
+    --bgColor: rgba(245, 245, 245);
+    min-height: 100vh;
+    display: grid;
+    align-content: center;
+    gap: 2rem;
+    /* padding: 2rem; */
+    font-family: "Poppins", sans-serif;
+    color: var(--color);
+    background: var(--bgColor);
+  }
+
+.flex {
+    display: flex;
+}
+
+.textbox {
+    /* border: 1px solid black; */
+    margin: 5vh 0vh 0vh 20vh;
+}
+
+img {
+    width: 40vh;
+    height: 40vh;
+    margin: 0vh 10vh 3vh 10vh;
+}
