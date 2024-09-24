@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', function() { // wacht tot de pagin
         fetch('footer.html') // haal de header op
             .then(response => response.text()) // zet de response om naar tekst
             .then(html => { // zet de tekst om naar html
-                footerElement.innerHTML = html; // zet de html in de header
+                footerElement.innerHTML = html; // zet de html in de footer
             })
-            .catch(error => console.error('Error loading the header:', error)); // als er een error is, toon deze
+            .catch(error => console.error('Error loading the footer:', error)); // als er een error is, toon deze
     } else {
         console.error('The header element does not exist!'); // als de header niet bestaat, toon dit
     }

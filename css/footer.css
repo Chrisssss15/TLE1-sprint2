@@ -8,15 +8,15 @@ footer{
     padding-bottom: 2vh;
     height: 30vh;
     color: white;
+    text-align: center;
 
-    display: grid;
+    display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr ;
     grid-template-areas:
         "group1 group2 group3"
-
-
 }
+
 
 .group1{
     grid-area: group1;
@@ -41,6 +41,8 @@ footer{
     padding-bottom: 1%;
     margin-left: 3%;
 }
+
+
 .group3{
     grid-area: group3;
     display: flex;
