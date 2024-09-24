@@ -1,6 +1,5 @@
 /* Footer */
 footer{
-    /* width: 90vw; */
     background-color:#04275f;
     margin: auto;
     padding-left: 3vw;
@@ -21,6 +20,16 @@ footer{
 
 .group1{
     grid-area: group1;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+.group1 a{
+    text-decoration: none;
+    color: white;
+    margin: 1%;
+    font-weight: bold;
+    font-size: 1rem;
 }
 .group2{
     grid-area: group2;
