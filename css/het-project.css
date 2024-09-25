@@ -1,4 +1,82 @@
-img {
-    width: 70vh;
-    height: 70vh;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+#header {
+  width: 100%;
+}
+
+body {
+  --color: rgba(30, 30, 30);
+  --bgColor: rgba(245, 245, 245);
+  display: grid;
+  align-content: center;
+  gap: 2rem;
+  /* padding: 2rem; */
+  font-family: "Poppins", sans-serif;
+  color: var(--color);
+  background: var(--bgColor);
+}
+
+h1 {
+  margin-left: 60vh;
+}
+
+h2 {
+  margin-left: 22vh;
+  margin-top: 3vh;
+}
+
+section {
+  display: flex;
+  flex-direction: row; /* Plaatst de tekstkolom en afbeelding naast elkaar */
+  justify-content: space-between;
+  align-items: flex-start; /* Zorgt ervoor dat de tekst en afbeelding bovenaan worden uitgelijnd */
+  /* border: 1px solid black; */
+}
+
+.text-column {
+  flex: 2; /* Zorgt ervoor dat de tekstkolom meer ruimte inneemt */
+  display: flex;
+  flex-direction: column;
+}
+
+.textflex {
+  margin-bottom: 1rem; /* Ruimte tussen tekstblokken */
+}
+
+.textbox {
+  /* border: 1px solid black; */
+  padding: 1rem;
+  margin: 1vh 20vh 0vh 20vh;
+}
+
+.imgflex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prototype1 {
+  flex: 1;
+  max-height: 50vh; /* Maximale hoogte, zodat hij niet groter wordt dan dit */
+  width: auto; /* Houdt de breedte in verhouding met de hoogte */
+  object-fit: contain; /* Zorgt ervoor dat de afbeelding niet vervormt en binnen het kader past */
+  margin-left: 2rem; /* Ruimte tussen de tekstkolom en de afbeelding */
+  margin-right: 15vh;
+}
+
+.prototype2 {
+  flex: 1;
+  height: 30vh;
+  width: 30vh;
+  object-fit: contain;
+  margin: 5vh 15vh 0vh 2rem;
+  border-radius: 1vh;
+}
+
+
