@@ -5,4 +5,101 @@
 
 #header{
     width: 100%;
+    /* position: fixed; */
+    /* margin-bottom: 5%; */
 }
+
+
+body {
+  --color: rgba(30, 30, 30);
+  --bgColor: rgba(245, 245, 245);
+  /* min-height: 100vh; */
+  /* display: grid; */
+  align-content: center;
+  /* gap: 2rem; */
+  font-family: "Poppins", sans-serif;
+  color: var(--color);
+  background: var(--bgColor);
+}
+
+#wallpaper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pic1{
+    margin-top: 3%;
+}
+
+
+.pic1 img{
+    width: 250px;
+    height: 250px;
+}
+
+.pic2{
+    font-size: 2rem;
+    text-align: center;
+}
+.pic2 img{
+    width: 20rem;
+    height: 20rem;
+}
+
+.pic3{
+    margin-top: 1%;
+}
+.pic3 img{
+    width: 10rem;
+    height: 20rem;
+} 
+
+.info1{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.product-context-1{
+    text-align: center;
+}
+
+.context h1{
+    font-weight: bold;
+}
+
+
+.product-context{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.product-text{
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 50%;
+}
+
+.product-img{
+    margin-top: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.product-img img{
+    width: 250px;
+    height: 500px;
+}
+
+
