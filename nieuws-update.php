@@ -45,6 +45,7 @@ if (!$databaseError) {
             <a href="demo.html">Demo</a>
             <a href="roadmap.html">Roadmap</a>
             <a href="nieuws-update.php">Nieuws & updates</a>
+            <a href="f&q.php">Contact</a>
         </nav>
     </header>
 
