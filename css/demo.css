@@ -1,3 +1,29 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    width: 100%;
+    /* position: fixed; */
+    /* margin-bottom: 5%; */
+}
+
+body {
+    --color: rgba(30, 30, 30);
+    --bgColor: rgba(245, 245, 245);
+    /* min-height: 100vh; */
+    /* display: grid; */
+    align-content: center;
+    /* gap: 2rem; */
+    font-family: "Poppins", sans-serif;
+    color: var(--color);
+    background: var(--bgColor);
+  }
+
 img {
     width: 30vh;
     height: 60vh;

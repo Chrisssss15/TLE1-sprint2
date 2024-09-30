@@ -35,8 +35,6 @@ mysqli_close($db);
 </head>
 <body>
 
-<div id="header"></div> <!-- Zorg ervoor dat deze div bestaat om je header in te laden -->
-
 <h1>Maak een nieuwe blogpost</h1>
 
 <div class="postlabel">
@@ -46,8 +44,6 @@ mysqli_close($db);
     <input class="button" type="submit" value="Post publiceren">
 </form>
 </div>
-
-<div id="footer"></div> <!-- Zorg ervoor dat deze div bestaat om je footer in te laden -->
 
 </body>
 </html>

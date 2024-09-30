@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $query = "INSERT INTO posts (post_text, userId) VALUES ('$post_text', $userId)";
 
     if ($db->query($query)) {
-        header("Location: nieuws-update.php"); // Redirect naar indexpagina na succesvolle toevoeging
+        header("Location: secured-nieuwsUpdate.php"); // Redirect naar indexpagina na succesvolle toevoeging
         exit;
     } else {
         echo "Er is een fout opgetreden: " . $db->error;

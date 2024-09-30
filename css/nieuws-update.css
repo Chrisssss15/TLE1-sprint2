@@ -1,9 +1,9 @@
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,10 +14,10 @@ body {
     font-family: "Poppins", sans-serif;
     color: var(--color);
     background: var(--bgColor);
-  }
+}
 
 /* Footer */
-footer{
+footer {
     background-color: #a1c8e7;
     margin: auto;
     padding-left: 3vw;
@@ -28,31 +28,34 @@ footer{
     color: white;
     text-align: center;
 
-    display: grid; 
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr ;
+    grid-template-rows: 1fr;
     grid-template-areas:
         "group1 group2 group3"
 }
 
 
-.group1{
+.group1 {
     grid-area: group1;
     display: flex;
     flex-direction: column;
     text-decoration: none;
 }
-.group1 a{
+
+.group1 a {
     text-decoration: none;
     color: white;
     margin: 1%;
     font-weight: bold;
     font-size: 1rem;
 }
-.group2{
+
+.group2 {
     grid-area: group2;
 }
-.group2 img{
+
+.group2 img {
     width: 50px;
     height: 50px;
     padding-top: 1%;
@@ -61,14 +64,15 @@ footer{
 }
 
 
-.group3{
+.group3 {
     grid-area: group3;
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    
+
 }
-.group3 a{
+
+.group3 a {
     text-decoration: none;
     color: white;
     margin: 3%;
@@ -76,7 +80,7 @@ footer{
     font-size: 1.2rem;
 }
 
-header{
+header {
     /* border: red 1px solid; */
     display: flex;
     flex-direction: row;
@@ -85,7 +89,8 @@ header{
     /* width: 90%; */
 
 }
-header img{
+
+header img {
     width: 175px;
     height: 150px;
     /* padding: 5px; */
@@ -93,7 +98,8 @@ header img{
     padding-bottom: 1%;
     margin-left: 2%;
 }
-nav{
+
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -101,7 +107,8 @@ nav{
     width: 80%;
     /* margin-left: 3%; */
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
     margin: 3%;
@@ -126,4 +133,17 @@ p {
     border: 2px solid black;
     border-radius: 2vh;
     margin: 5vh 25vh 5vh 25vh;
+}
+
+button {
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+
+.buttontext {
+    display: inline-block;
+    /* Ensure the link text is inline */
+    padding: 1vh 3vh 1vh 3vh;
+    white-space: nowrap;
+    /* Prevent text from wrapping to the next line */
 }

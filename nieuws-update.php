@@ -7,24 +7,6 @@ if (!isset($db) || $db->connect_error) {
     $databaseError = "Verbinding met de database mislukt: " . ($db->connect_error ?? 'Onbekende fout');
 }
 
-// Verwerk het verwijderen van een post
-if (isset($_GET['delete_post_id']) && !$databaseError) {
-    $delete_post_id = intval($_GET['delete_post_id']);
-
-    // Gebruik een prepared statement om SQL-injectie te voorkomen
-    $stmt = $db->prepare("DELETE FROM posts WHERE id = ?");
-    $stmt->bind_param("i", $delete_post_id);
-
-    if ($stmt->execute()) {
-        header("Location: nieuws-update.php"); // Redirect naar indexpagina na succesvolle verwijdering
-        exit;
-    } else {
-        echo "Er is een fout opgetreden bij het verwijderen van de post.";
-    }
-
-    $stmt->close();
-}
-
 // Haal alle posts op uit de database met de gebruikersnaam
 $posts = [];
 if (!$databaseError) {

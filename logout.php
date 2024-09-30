@@ -7,7 +7,7 @@ session_start();
 session_destroy();
 
 // Redirect to login page
-header('Location: nieuws-update.html');
+header('Location: nieuws-update.php');
 
 // Exit the code.
 exit();
