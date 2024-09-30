@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() { // wacht tot de pagin
             })
             .catch(error => console.error('Error loading the footer:', error)); // als er een error is, toon deze
     } else {
-        console.error('The header element does not exist!'); // als de header niet bestaat, toon dit
+        console.error('The footer element does not exist!'); // als de footer niet bestaat, toon dit
     }
 });
 
