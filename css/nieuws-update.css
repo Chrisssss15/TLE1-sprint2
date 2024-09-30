@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    --color: rgba(30, 30, 30);
+    --bgColor: rgba(245, 245, 245);
+    align-content: center;
+    /* padding: 2rem; */
+    font-family: "Poppins", sans-serif;
+    color: var(--color);
+    background: var(--bgColor);
+  }
+
+/* Footer */
+footer{
+    background-color: #a1c8e7;
+    margin: auto;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    height: 30vh;
+    color: white;
+    text-align: center;
+
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas:
+        "group1 group2 group3"
+}
+
+
+.group1{
+    grid-area: group1;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+.group1 a{
+    text-decoration: none;
+    color: white;
+    margin: 1%;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.group2{
+    grid-area: group2;
+}
+.group2 img{
+    width: 50px;
+    height: 50px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 3%;
+}
+
+
+.group3{
+    grid-area: group3;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    
+}
+.group3 a{
+    text-decoration: none;
+    color: white;
+    margin: 3%;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+header{
+    /* border: red 1px solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #a1c8e7;
+    /* width: 90%; */
+
+}
+header img{
+    width: 175px;
+    height: 150px;
+    /* padding: 5px; */
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 2%;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2%;
+    width: 80%;
+    /* margin-left: 3%; */
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin: 3%;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+h1 {
+    text-align: center;
+    margin: 5vh 0vh 0vh 0vh;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.post {
+    border: 2px solid black;
+    border-radius: 2vh;
+    margin: 5vh 25vh 5vh 25vh;
+}
