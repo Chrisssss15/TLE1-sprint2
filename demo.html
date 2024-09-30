@@ -4,41 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Over ons</title>
-    <link rel="stylesheet" href="./css/style.css"> <!-- linken naar css bestand -->
+    <link rel="stylesheet" href="./css/style.css"> <!-- Link naar je CSS-bestand -->
     <link rel="stylesheet" href="./css/demo.css">
-    <script src="./js/main.js"></script> <!-- linken naar js bestand -->
-
+    <script src="./js/main.js" defer></script> <!-- Voeg 'defer' toe om de uitvoering uit te stellen -->
+    <script src="./js/demo.js" defer></script> <!-- Voeg je demo.js bestand hier toe -->
 </head>
 <body>
-    <div id="header"></div> <!-- Zorg ervoor dat deze div bestaat om je header in te laden -->
+<div id="header"></div> <!-- Zorg ervoor dat deze div bestaat om je header in te laden -->
+
+<div class="container"> <!-- Container voor alle secties -->
     <div class="demoStart">
         <div class="download">
-        <h2>Download nu de app via de App Store of Google Play Store</h2>
+            <h2>Download nu de app via de App Store of Google Play Store</h2>
             <div class="downloadButtons">
                 <div>
-                <img src="img/appStore.png" class="downloadIcons">
-                <img src="img/googlePlay.png" class="downloadIcons">
+                    <img src="img/appStore.png" class="downloadIcons" alt="App Store">
+                    <img src="img/googlePlay.png" class="downloadIcons" alt="Google Play Store">
                 </div>
             </div>
         </div>
-        <img src="img/loading.png" class="logoImg">
+        <img src="img/loading.png" class="logoImg" alt="Loading">
     </div>
+
     <div class="demoCalendar">
         <p>
             Rewindr is een app die gebruikers in staat stelt om verschillende dagen opnieuw te beleven. Deze app is ontwikkeld voor mensen die er van houden om gebeurtenissen terug te zien. Ook biedt de app hulp voor mensen met dementie door verschillende gebeurtenissen terug te kunnen zien.
         </p>
-        <img src="img/calendar.png">
+        <img src="img/calendar.png" alt="Calendar">
     </div>
+
     <div class="demoSetting">
-        <p>Om de app te gebruiken heb je een kleine camera nodig om de gebeurtenissen op te slaan. Om de camera te kunnen gebruiken moet je het eerst verbinden met je telefoon doormiddel van je bluetooth. Daarna wordt de camera bevestigd door een clip op kledingstukken zoals een shirt of bril. </p>
-        <img src="img/settings.png">
+        <p>Om de app te gebruiken heb je een kleine camera nodig om de gebeurtenissen op te slaan. Om de camera te kunnen gebruiken moet je het eerst verbinden met je telefoon doormiddel van je bluetooth. Daarna wordt de camera bevestigd door een clip op kledingstukken zoals een shirt of bril.</p>
+        <img src="img/settings.png" alt="Settings">
     </div>
+
     <div class="demoCalendar">
-        <p>Als je de app opent kom je op de home scherm. Daar zie je verschillende foto’s van willekeurige dagen. Zo kan je verschillende speciale momenten terug zien.
-            Bij de kalenderpagina kan je een week, dag en uur selecteren. Zo kan je zelf kiezen welk moment je opnieuw wilt beleven.
-        </p>
-        <img src="img/homepage.png">
+        <p>Als je de app opent kom je op het home scherm. Daar zie je verschillende foto’s van willekeurige dagen. Zo kan je verschillende speciale momenten terug zien. Bij de kalenderpagina kan je een week, dag en uur selecteren. Zo kan je zelf kiezen welk moment je opnieuw wilt beleven.</p>
+        <img src="img/homepage.png" alt="Homepage">
     </div>
-    <div id="footer"></div> <!-- Zorg ervoor dat deze div bestaat om je footer in te laden -->
+</div>
+
+<div id="footer"></div> <!-- Zorg ervoor dat deze div bestaat om je footer in te laden -->
 </body>
 </html>

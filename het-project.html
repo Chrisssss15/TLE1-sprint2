@@ -6,58 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Het project</title>
     <link rel="stylesheet" href="./css/het-project.css">
-    <script src="./js/main.js"></script> <!-- linken naar js bestand -->
+    <script src="./js/main.js" defer></script> <!-- Link naar js bestand met defer -->
 </head>
 
 <body>
-    <div id="header"></div> <!-- Zorg ervoor dat deze div bestaat om je header in te laden -->
+<div id="header"></div> <!-- Zorg ervoor dat deze div bestaat om je header in te laden -->
 
-    <h1>Het project</h1>
+<h1>Het project</h1>
 
-    <section>
-        <div class="text-column">
-            <div class="textflex">
-                <p class="textbox">Deze innovatieve app is ontwikkeld met het oog op twee doelgroepen: mensen die het
-                    leuk vinden om speciale gebeurtenissen terug te zien en mensen die hulp nodig hebben bij het ophalen
-                    van herinneringen, zoals personen met dementie. Voor mensen die waarde hechten aan het vastleggen
-                    van herinneringen, biedt Rewindr een unieke mogelijkheid om momenten opnieuw te ervaren. De app
-                    biedt daarnaast een waardevolle tool voor mensen met geheugenproblemen, waardoor ze belangrijke
-                    delen van hun verleden opnieuw kunnen beleven. Door de combinatie van technologie en herinneringen
-                    slaat Rewindr een brug tussen het heden en het verleden, wat gebruikers zowel emotionele als
-                    praktische voordelen biedt.</p>
-            </div>
-
-            <div class="textflex">
-                <h2>Hoe werkt Rewindr?</h2>
-                <p class="textbox">Om Rewindr te gebruiken, is er een kleine draagbare camera nodig die de
-                    gebeurtenissen uit het dagelijks leven vastlegt. Deze camera, die zo discreet is dat hij gemakkelijk
-                    gedragen kan worden, moet eerst via Bluetooth worden gekoppeld aan je smartphone om de beelden
-                    veilig op te slaan en te synchroniseren. De camera wordt met behulp van een clip op kledingstukken
-                    zoals een T-shirt of bril bevestigd, zodat deze eenvoudig en onopvallend op elke outfit kan worden
-                    gedragen. De gebruiker kan zich dus volledig focussen op het beleven van het moment, terwijl de app
-                    op de achtergrond herinneringen vastlegt.
-                </p>
-            </div>
-
-            <div class="textflex">
-                <h2>Hoe werkt de app zelf?</h2>
-                <p class="textbox">Bij het openen van de app kom je terecht op het thuisscherm, waar een selectie van
-                    foto’s wordt weergegeven die willekeurige momenten uit je leven laten zien. Deze foto's geven een
-                    voorproefje van speciale dagen die je hebt beleefd, waardoor je gemakkelijk toegang hebt tot
-                    dierbare herinneringen. Op de kalenderpagina van de app kun je met gemak specifieke tijdstippen
-                    selecteren, zoals een bepaalde week, dag of zelfs een specifiek uur. Door deze functie kan de
-                    gebruiker nauwkeurig bepalen welke momenten hij of zij opnieuw wil beleven. Rewindr maakt het
-                    eenvoudig om door de tijd te reizen, waarbij je elk moment dat je belangrijk vindt, opnieuw kunt
-                    ervaren.</p>
-            </div>
+<section>
+    <div class="text-column">
+        <div class="textflex">
+            <p class="textbox">Deze innovatieve app is ontwikkeld met het oog op twee doelgroepen: mensen die het
+                leuk vinden om speciale gebeurtenissen terug te zien en mensen die hulp nodig hebben bij het ophalen
+                van herinneringen, zoals personen met dementie. Voor mensen die waarde hechten aan het vastleggen
+                van herinneringen, biedt Rewindr een unieke mogelijkheid om momenten opnieuw te ervaren. De app
+                biedt daarnaast een waardevolle tool voor mensen met geheugenproblemen, waardoor ze belangrijke
+                delen van hun verleden opnieuw kunnen beleven. Door de combinatie van technologie en herinneringen
+                slaat Rewindr een brug tussen het heden en het verleden, wat gebruikers zowel emotionele als
+                praktische voordelen biedt.</p>
         </div>
 
-        <div class="imgflex">
-            <img class="prototype1" src="img/prototype1.png" alt="prototype1">
-            <img class="prototype2" src="img/prototype2.png" alt="prototype2">
+        <div class="textflex">
+            <h2>Hoe werkt Rewindr?</h2>
+            <p class="textbox">Om Rewindr te gebruiken, is er een kleine draagbare camera nodig die de
+                gebeurtenissen uit het dagelijks leven vastlegt. Deze camera, die zo discreet is dat hij gemakkelijk
+                gedragen kan worden, moet eerst via Bluetooth worden gekoppeld aan je smartphone om de beelden
+                veilig op te slaan en te synchroniseren. De camera wordt met behulp van een clip op kledingstukken
+                zoals een T-shirt of bril bevestigd, zodat deze eenvoudig en onopvallend op elke outfit kan worden
+                gedragen. De gebruiker kan zich dus volledig focussen op het beleven van het moment, terwijl de app
+                op de achtergrond herinneringen vastlegt.
+            </p>
         </div>
-    </section>
-    <div id="footer"></div> <!-- Zorg ervoor dat deze div bestaat om je footer in te laden -->
+
+        <div class="textflex">
+            <h2>Hoe werkt de app zelf?</h2>
+            <p class="textbox">Bij het openen van de app kom je terecht op het thuisscherm, waar een selectie van
+                foto’s wordt weergegeven die willekeurige momenten uit je leven laten zien. Deze foto's geven een
+                voorproefje van speciale dagen die je hebt beleefd, waardoor je gemakkelijk toegang hebt tot
+                dierbare herinneringen. Op de kalenderpagina van de app kun je met gemak specifieke tijdstippen
+                selecteren, zoals een bepaalde week, dag of zelfs een specifiek uur. Door deze functie kan de
+                gebruiker nauwkeurig bepalen welke momenten hij of zij opnieuw wil beleven. Rewindr maakt het
+                eenvoudig om door de tijd te reizen, waarbij je elk moment dat je belangrijk vindt, opnieuw kunt
+                ervaren.</p>
+        </div>
+    </div>
+
+    <div class="imgflex">
+        <img class="prototype1" src="img/prototype1.png" alt="prototype1">
+        <img class="prototype2" src="img/prototype2.png" alt="prototype2">
+    </div>
+</section>
+
+<div id="footer"></div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Helper functie om HTML-inhoud toe te voegen
+        function addInnerHTML(selector, html) {
+            const element = document.querySelector(selector);
+            if (element) {
+                element.innerHTML = html;
+            }
+        }
+
+        // Voeg dynamische header toe
+        addInnerHTML('#header', `
+                <nav>
+                    <ul style="display: flex; justify-content: space-around; list-style: none; padding: 0;">
+                        <li><a href="#home" style="text-decoration: none; color: #333;">Home</a></li>
+                        <li><a href="#over-ons" style="text-decoration: none; color: #333;">Over Ons</a></li>
+                        <li><a href="#contact" style="text-decoration: none; color: #333;">Contact</a></li>
+                    </ul>
+                </nav>
+            `);
+
+        // Voeg dynamische footer toe
+        addInnerHTML('#footer', `
+                <footer style="text-align: center; padding: 20px; background-color: #222; color: #fff;">
+                    <p>&copy; 2024 Rewindr. Alle rechten voorbehouden.</p>
+                </footer>
+            `);
+
+        // Afbeeldingen interactie
+        const images = document.querySelectorAll('.imgflex img');
+        images.forEach(image => {
+            image.addEventListener('mouseover', function() {
+                image.style.transform = 'scale(1.05)';  // Vergroot afbeelding bij hover
+                image.style.transition = 'transform 0.3s ease';  // Animatie
+            });
+
+        });
+    });
+</script>
 </body>
 
 </html>
