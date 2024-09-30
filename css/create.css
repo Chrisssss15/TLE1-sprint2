@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --color: rgba(30, 30, 30);
+    --bgColor: rgba(245, 245, 245);
+    align-content: center;
+    /* padding: 2rem; */
+    font-family: "Poppins", sans-serif;
+    color: var(--color);
+    background: var(--bgColor);
+}
+
+h1 {
+    text-align: center;
+    margin: 5vh 0vh 5vh 0vh;
+}
+
+.postlabel {
+    font-size: 1.5rem;
+    margin: 1vh 50vh 5vh 50vh;
+    border: 2px solid black;
+    border-radius: 2vh;
+}
+
+#post_text {
+    margin: 0vh 0vh 0vh 4vh;
+    padding: 1vh 18vh 10vh 1vh;
+    border-radius: 2vh;
+}
+
+.button {
+    margin: 0vh 0vh 5vh 23vh;
+    padding: 1vh 10vh 1vh 10vh;
+    border-radius: 2vh;
+}
