@@ -78,6 +78,7 @@ if (!$databaseError) {
             <a href="demo.html">Demo</a>
             <a href="roadmap.html">Roadmap</a>
             <a href="nieuw-update.php">Nieuws & updates</a>
+            <a href="f&q.php">Contact</a>
         </div>
         <div class="group2">
             <p>Social media </p>
@@ -90,7 +91,7 @@ if (!$databaseError) {
             <a href="">Privacyverklaring</a>
             <a href="">Algemene voorwaarden</a>
             <a href="">Cookie beleid</a>
-            <a href="">Contact</a>
+            <a href="f&q.php">Contact</a>
             <a href="login.php">ONLY ADMIN</a>
         </div>
 
