@@ -84,7 +84,7 @@ if (isset($_POST['submit'])) {
 <body>
 <section class="section">
     <div class="container content">
-        <p>Terug naar de <a href="nieuws-update.html">Homepagina</a></p>
+        <p>Terug naar de <a href="nieuws-update.php">Homepagina</a></p>
         <h2 class="title">Log in</h2>
 
         <section class="columns">
