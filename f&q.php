@@ -84,40 +84,43 @@ mysqli_close($db);
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/f&q.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/main.js"></script>
     <title>Document</title>
 </head>
 <body>
-<h1>Contact</h1>
+<div id="header"></div>
 <form action="" method="post">
+    <h1>Contact</h1>
 <div class="formParent">
     <div class="formChild">
-    <label class="label" for="name">name</label>
-    <input class="input" id="name" type="text" name="name" value="<?= $name ?? '' ?>" placeholder="<?= $errors['name'] ?? '' ?>" required>
+    <label class="label" for="name">Naam</label>
+    <input class="input" id="name" type="text" name="name" placeholder="<?= $errors['name'] ?? '' ?>" required>
     </div>
 </div>
     <div class="formParent">
         <div class="formChild">
-            <label class="label" for="mail">mail</label>
-            <input class="input" id="email" type="text" name="email" value="<?= $email ?? '' ?>" placeholder="<?= $errors['email'] ?? '' ?>" required>
+            <label class="label" for="mail">Mail</label>
+            <input class="input" id="email" type="text" name="email" placeholder="<?= $errors['email'] ?? '' ?>" required>
         </div>
     </div>
     <div class="formParent">
         <div class="formChild">
-            <label class="label" for="subject">subject</label>
-            <input class="input" id="subject" type="text" name="subject" value="<?= $subject ?? '' ?>" placeholder="<?= $errors['subject'] ?? '' ?>" required>
+            <label class="label" for="subject">Onderwerp</label>
+            <input class="input" id="subject" type="text" name="subject" placeholder="<?= $errors['subject'] ?? '' ?>" required>
         </div>
     </div>
     <div class="formParent">
         <div class="formChild">
-            <label class="label" for="message">message</label>
-            <textarea class="input" id="message" type="text" name="message" value="<?= $message ?? '' ?>" placeholder="<?= $errors['message'] ?? '' ?>" required></textarea>
+            <label class="label" for="message">Bericht</label>
+            <textarea class="input" id="message" type="text" name="message" placeholder="<?= $errors['message'] ?? '' ?>" required></textarea>
         </div>
     </div>
     <div class="formChild">
         <button type="submit" id="submit" name="submit">Submit</button>
     </div>
 </form>
+<div id="footer"></div>
 </body>
 </html>

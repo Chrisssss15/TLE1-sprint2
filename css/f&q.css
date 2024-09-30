@@ -1,0 +1,35 @@
+h1{
+    margin-top: 3vh;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    width: 25vw;
+    height: 5vh;
+    border-radius: 5px;
+    margin-bottom: 3vh;
+}
+
+textarea{
+    width: 25vw;
+    height: 20vh;
+    border-radius: 5px;
+    margin-bottom: 3vh;
+    resize: none;
+}
+
+button{
+    width: 25vw;
+    height: 5vh;
+    margin-bottom: 4vh;
+}
+
+.formChild{
+    display: flex;
+    flex-direction: column;
+}
