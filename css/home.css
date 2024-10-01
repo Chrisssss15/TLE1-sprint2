@@ -1,0 +1,130 @@
+* {
+    padding: 0 auto;
+    margin: 0;
+    font-family: "Roboto Light", sans-serif;
+    box-sizing: border-box;
+}
+
+#header{
+    width: 100%;
+    /* position: fixed; */
+    /* margin-bottom: 5%; */
+}
+
+
+body {
+    --color: rgba(30, 30, 30);
+    --bgColor: rgba(245, 245, 245);
+    /* min-height: 100vh; */
+    /* display: grid; */
+    align-content: center;
+    /* gap: 2rem; */
+    font-family: "Poppins", sans-serif;
+    color: var(--color);
+    background: var(--bgColor);
+}
+
+#wallpaper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pic1{
+    margin-top: 3%;
+}
+
+
+.pic1 img{
+    width: 250px;
+    height: 250px;
+}
+
+.pic2{
+    font-size: 2rem;
+    text-align: center;
+}
+.pic2 img{
+    width: 20rem;
+    height: 20rem;
+}
+
+.pic3{
+    margin-top: 1%;
+}
+.pic3 img{
+    width: 10rem;
+    height: 20rem;
+}
+
+.info1{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.product-context-1{
+    text-align: center;
+}
+
+.context h1{
+    font-weight: bold;
+}
+
+
+.product-context{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.product-text{
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 50%;
+}
+
+.product-img{
+    margin-top: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.product-img img{
+    width: 250px;
+    height: 500px;
+}
+
+/* Stijl voor de button */
+#info-btn {
+    background-color: #000; /* Zwarte achtergrond */
+    color: #fff; /* Witte tekst */
+    padding: 10px 20px; /* Ruimte binnen de knop */
+    border: none; /* Verwijder standaard rand */
+    border-radius: 5px; /* Ronde hoeken */
+    font-size: 16px; /* Grotere tekst */
+    cursor: pointer; /* Pointer bij hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Zachte schaduw */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Mooie overgang */
+}
+
+/* Hover-effect voor de button */
+#info-btn:hover {
+    background-color: #333; /* Donkergrijze achtergrond bij hover */
+    transform: scale(1.05); /* Vergroot de knop een beetje */
+}
+
+/* Actieve stijl voor als je op de knop klikt */
+#info-btn:active {
+    background-color: #555; /* Nog donkerder bij klikken */
+    transform: scale(1); /* Geen vergroting meer */
+}
